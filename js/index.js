@@ -11,7 +11,7 @@ $(document).ready(function(){
             $(this).css('background-color','rgb(82,149,205)');
         });
     }
-    top
+    top();
 
     //导航栏
 
@@ -75,13 +75,9 @@ $(document).ready(function(){
     tabadv();
     //轮播图
 
-    //function date(){
-        var date=new Date();
-        //alert(date.getFullYear());
-        //alert(date.getDate())
-    //}
-    //date()
+
     function givedate(){
+        var date=new Date();
         $('#date').html(date.getFullYear() + '-' + (parseInt(date.getMonth())+1) +'-'+ date.getDate());
     }
     givedate();
@@ -122,4 +118,5 @@ $(document).ready(function(){
 
     }
     logoScroll();
+
 });

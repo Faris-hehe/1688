@@ -4,6 +4,9 @@ body,h1,h2,h3,h4,h5,div,ul,li,p,input,button{
     padding:0;
     font-size:12px;
 }
+body{
+    zoom: 1.5;
+}
 li{
     list-style: none;
 }
@@ -219,12 +222,12 @@ a{
 }
 #ali{
     position:relative;
-    top:24px;
+    top:23px;
     left:-10px;
     width:236px;
     height:30px;
     margin-left:0px;
-    background-color: #ffc200;
+    background-color: rgb(255,244,210);
 }
 #ali p{
     line-height: 30px;
@@ -237,20 +240,29 @@ a{
     margin-top:10px;
 }
 #advise{
-    border:1px solid grey;
-    padding-left:10px;
+    font-size: 14px;
+    padding-left:5px;
     padding-top:10px;
     width:20px;
-    height:65px;
+    height:70px;
     position:absolute;
-    right:-40px;
+    right:-30px;
     top:-10px;
     background-color: gainsboro;
+}
+#advise a{
+    color:grey;
+    text-decoration: none;
+}
+#advise a:hover{
+    color:rgb(255,169,57);
+    text-decoration: none;
 }
 
 /*品牌轮播*/
 .logoBar{
     margin:0px auto 10px auto;
+    /*margin-right:20px;*/
     width:1000px;
     height:80px;
     border:1px solid gainsboro;
@@ -269,10 +281,10 @@ a{
 .logoBar-scroll{
     width:850px;
     height:50px;
-    /*background-color: gainsboro;*/
     position:relative;
     left:100px;
     bottom: 20px;
+    /*background-color: grey;*/
     overflow: hidden;
 }
 .logoBar-scroll-btnLeft{
@@ -297,7 +309,6 @@ a{
 }
 .logoBar-scroll-list{
     position: relative;
-    /*left:10px;*/
 }
 .logoBar-scroll-item{
     float:left;
@@ -443,4 +454,23 @@ a{
     line-height: 20px;
     margin:0 5px;
     height:20px;
+}
+
+.consult{
+    width:35px;
+    height:35px;
+    background-color: gainsboro;
+    position:fixed;
+    z-index: 10;
+    right:0px;
+    top:40%;
+    font-size:16px;
+    font-weight:bold;
+    padding:10px;
+}
+.consult a{
+    color: grey;
+}
+.consult a:hover{
+    color: rgb(255,169,57);
 }
